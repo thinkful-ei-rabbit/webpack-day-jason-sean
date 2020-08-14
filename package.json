@@ -2,9 +2,10 @@
   "name": "shopping-list-webpack-day",
   "version": "1.0.0",
   "description": "#### Created for the Thinkful EI Program.",
-  "main": "index.js",
+  "main": "/scripts/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server", 
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,17 @@
   "bugs": {
     "url": "https://github.com/thinkful-ei-rabbit/webpack-day-jason-sean/issues"
   },
-  "homepage": "https://github.com/thinkful-ei-rabbit/webpack-day-jason-sean#readme"
+  "homepage": "https://github.com/thinkful-ei-rabbit/webpack-day-jason-sean#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "css-loader": "^4.2.1",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
